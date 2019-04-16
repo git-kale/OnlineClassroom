@@ -1,0 +1,16 @@
+{% extends "doubts/base.html" %}
+{% block content %}
+    {% for doubt in doubts %}
+        <article class="media content-section">
+          <img class="rounded-circle article-img" src="{{ doubt.author.profile.image.url }}">
+          <div class="media-body">
+            <div class="article-metadata">
+              <a class="mr-2" href="#">{{ doubt.author }}</a>
+              <small class="text-muted">{{ doubt.date|date:"F d, Y" }}</small>
+            </div>
+            <h2><a class="article-title" href="{% url 'doubts-detail' doubt.id %}">{{ doubt.title }}</a></h2>
+            <p class="article-content">{{ doubt.content }}</p>
+          </div>
+        </article>
+    {% endfor %}
+{% endblock content %}

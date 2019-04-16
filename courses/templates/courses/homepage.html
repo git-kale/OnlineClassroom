@@ -1,0 +1,86 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Online Classroom</title>
+  <link rel="stylesheet" type="text/css" href="{% static 'courses/home.css' %}">
+</head>
+
+<body>
+
+  <header>
+    <div>
+      <i class="fas fa-atom"></i>
+      <h2>Online Classroom</h2>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="{% url 'courses-home' %}">Courses</a></li>
+        <li><a href="{% url 'register' %}">SignUp</a></li>
+        <li><a href="{% url 'doubts-home' %}">AskUs</a></li>
+        <li><a href="{% url 'email' %}">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="titles">
+
+    <h1>Online Classroom</h1>
+    <p>A platform to learn new things, get hands on teaching & of course earn money</p>
+
+  </section>
+
+  <section class="container-boxes">
+    <div class="box">
+
+      <div class="icon">
+        <a href=""><i class="fas fa-fire"></i></a>
+      </div>
+
+      <div class="text">
+        <a href="">
+          <h3>The Teacher</h3>
+          <p>The best teacher you can have, internationally renowned "hooker".</p>
+        </a>
+      </div>
+
+    </div>
+
+    <div class="box">
+
+      <div class="icon">
+        <a href=""><i class="fas fa-seedling"></i></a>
+      </div>
+
+      <div class="text">
+        <a href="">
+          <h3>The Student</h3>
+          <p>Learn by your choice, ask anything</p>
+        </a>
+      </div>
+
+    </div>
+
+    <div class="box">
+
+      <div class="icon">
+        <a href=""><i class="fas fa-address-card"></i></a>
+      </div>
+
+      <div class="text">
+        <a href="">
+          <h3>The Admin</h3>
+          <p>Administration over a whole student-teacher system</p>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+</body>
+
+</html>
